@@ -1,0 +1,14 @@
+[server]
+postgres_uri = "postgres://..."
+fivem_key = "..."
+# This ties in with the unique state ids. if this is true then
+# people can use other people's unique state ids to "claim" to be
+# them when registering for anything. 
+allow_identity_theft = true
+
+# What should the users know their unique ids as?
+[server.unique_state_id_name]
+# Will be shown in shorter, bodies of texts. Such as a headline/tagline
+shorthand = "SSN"
+# Will be shown in longer bodies of text
+longhand = "Social Security Number"
